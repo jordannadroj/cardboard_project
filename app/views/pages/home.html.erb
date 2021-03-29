@@ -1,5 +1,51 @@
-<div class="navbar">
-  <%= link_to root_path do %>
-     <%= image_tag "ete-logo-3.png", alt: "alttext", class: "logo" %>
-  <% end %>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- left navbar -->
+    <div class="navbar col-2">
+      <!-- logo -->
+      <%= link_to root_path do %>
+         <%= image_tag "ete-logo-3.png", alt: "alttext", class: "logo" %>
+      <% end %>
+
+      <div class="navigation">
+        <ul>
+        <li><a href="#">CP 2.0</a></li>
+        <li><a href="#">CP 1.0</a></li>
+        <li><a href="#">About</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- end of navbar -->
+
+    <!-- gallery -->
+    <div class="gallery col-10">
+      <div class="gallery-column">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+      </div>
+      <div class="gallery-column">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+      </div>
+      <div class="gallery-column">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+       <img src="https://picsum.photos/400" alt="">
+      </div>
+    </div>
+  </div>
 </div>
