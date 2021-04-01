@@ -1,44 +1,8 @@
+<div class="banner">
 
-
-<div class="container-fluid">
-  <div class="row">
-    <!-- left navbar -->
-    <div class="navbar col-1" id="navbarToggleExternalContent">
-      <!-- logo -->
-      <%= link_to root_path do %>
-         <%= image_tag "ete-logo-3.png", alt: "alttext", class: "logo" %>
-      <% end %>
-
-      <div class="navigation">
-        <ul>
-        <li><a href="#">CP 2.0</a></li>
-        <li><a href="#">CP 1.0</a></li>
-        <li><a href="#">About</a></li>
-
-        </ul>
-      </div>
-    </div>
-    <!-- end of navbar -->
-
-    <!-- gallery -->
-    <div class="gallery col-11">
-      <div class="gallery-column">
-       <%= image_tag "piece1.jpeg", alt: "alttext" %>
-       <%= image_tag "piece2.jpeg", alt: "alttext" %>
-       <%= image_tag "piece7.jpeg", alt: "alttext" %>
-
-      </div>
-      <div class="gallery-column">
-       <%= image_tag "piece3.jpeg", alt: "alttext" %>
-       <img src="https://picsum.photos/400" alt="">
-       <%= image_tag "piece4.jpeg", alt: "alttext" %>
-      </div>
-      <div class="gallery-column">
-       <img src="https://picsum.photos/400" alt="">
-      <%= image_tag "piece5.jpeg", alt: "alttext" %>
-      <%= image_tag "piece6.jpeg", alt: "alttext" %>
-      <%= image_tag "piece8.jpeg", alt: "alttext" %>
-      </div>
-    </div>
-  </div>
+  <h1 id="title"></h1>
+  <h4><span id="banner-typed-text"></span></h4>
+  <%= link_to "VIEW", cp3_index_path, id: "view"  %>
 </div>
+
+
