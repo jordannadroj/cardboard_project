@@ -1,3 +1,36 @@
 <div class="navbar">
-  <%= image_tag "ete-logo-3.png", alt: "alttext" %>
+  <%= link_to root_path, class: "navbar-brand" do  %>
+    <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1617388886/cardboard/qtvt0hdliq6udwdm3xay.png"), alt: "Employ to Empower" %>
+  <% end %>
 </div>
+
+<!-- <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+  <div class="grid-item"><%#= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg") %></div>
+  <div class="grid-item grid-item--width2"><%#= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387524/cardboard/gkd1fuxpluzmkh7a9apv.jpg") %></div>
+  <div class="grid-item"><%#= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387565/cardboard/bdudfbalhz2bal2pslqo.jpg") %></div>
+</div>
+ -->
+<div class="container-fluid">
+   <div class="gallery">
+        <div class="gallery-column gallery-left">
+          <a href="google.com">
+
+           <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg") %>
+          </a>
+         <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387507/cardboard/ppzlb4bllct2dq0avdpa.jpg") %>
+         <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387687/cardboard/euevnlduvbq0eviu71gt.jpg") %>
+        </div>
+        <div class="gallery-column gallery-right">
+          <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387524/cardboard/gkd1fuxpluzmkh7a9apv.jpg") %>
+          <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387565/cardboard/bdudfbalhz2bal2pslqo.jpg") %>
+          <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387704/cardboard/b052ihhqntcpn8xzelme.jpg") %>
+        </div>
+        <!-- <div class="gallery-column">
+         <%#= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387707/cardboard/inhplml3wlnlfskj2mkq.jpg") %>
+         <%#= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387681/cardboard/ouxjhjjmhgcckax1ifki.jpg") %>
+         <%#= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387536/cardboard/ebrldk9jnmhro5gt77vv.jpg") %>
+        </div> -->
+  </div>
+</div>
+
+
