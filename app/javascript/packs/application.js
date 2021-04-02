@@ -34,5 +34,5 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
 });
 
-loadTitle();
-loadDynamicBannerText();
+  loadTitle();
+  loadDynamicBannerText();
