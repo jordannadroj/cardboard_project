@@ -1,4 +1,5 @@
-.navbar {
+// Le wagon UI KIT
+.navbar-lewagon {
   justify-content: space-between;
   background: white;
 }
@@ -14,4 +15,46 @@
 
 .logo {
   width: 200px;
+}
+
+
+// My own navbar
+
+.navbar {
+  border-bottom: 1px solid $dark-grey;
+  padding-bottom: 10px;
+  img {
+    width: 70%;
+  }
+}
+
+// for center the navbar links
+// source
+// https://www.codexworld.com/bootstrap-navbar-center-align-menu-text/
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+.nav-link {
+  color: $dark-grey;
+  font-weight: 100;
+  font-size: 20px;
+  &:hover {
+    color: $dark-grey;
+  }
+}
+
+.nav-link:after {
+    transition: all ease-in-out .4s;
+    background: none repeat scroll 0 0 $red;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+.nav-link:hover:after {
+    width: 100%;
 }

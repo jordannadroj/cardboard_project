@@ -1,26 +1,82 @@
-<div class="navbar">
-  <%= link_to root_path, class: "navbar-brand" do  %>
-    <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1617388886/cardboard/qtvt0hdliq6udwdm3xay.png"), alt: "Employ to Empower" %>
-  <% end %>
-</div>
+<div class="container-whole">
+  <nav class="navbar navbar-expand-lg justify-content-between">
+    <%= link_to root_path, class: "navbar-brand" do  %>
+      <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1617388886/cardboard/qtvt0hdliq6udwdm3xay.png"), alt: "Employ to Empower" %>
+    <% end %>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav navbar-center mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">CP 3.0<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CP 2.0<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CP 1.0</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
 
-<div class="container-fluid">
-   <div class="gallery">
-        <div class="gallery-column gallery-left">
+  <div class="header">
+    <h2 style="font-weight: 200">Cardboard Project 3.0</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio sapiente deserunt laboriosam, voluptate repellendus rerum quia reiciendis quod sed neque atque delectus sequi eaque aliquam maiores mollitia quisquam odio.</p>
+  </div>
+
+
+  <div class="gallery">
+      <div class="gallery-column gallery-left">
+        <div class="piece">
           <a href="google.com">
            <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg") %>
           </a>
-         <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387507/cardboard/ppzlb4bllct2dq0avdpa.jpg") %>
-         <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387687/cardboard/euevnlduvbq0eviu71gt.jpg") %>
-         <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387707/cardboard/inhplml3wlnlfskj2mkq.jpg") %>
-         <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387681/cardboard/ouxjhjjmhgcckax1ifki.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
         </div>
-        <div class="gallery-column gallery-right">
-          <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387524/cardboard/gkd1fuxpluzmkh7a9apv.jpg") %>
-          <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387565/cardboard/bdudfbalhz2bal2pslqo.jpg") %>
-          <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387704/cardboard/b052ihhqntcpn8xzelme.jpg") %>
-          <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387536/cardboard/ebrldk9jnmhro5gt77vv.jpg") %>
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387507/cardboard/ppzlb4bllct2dq0avdpa.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
         </div>
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387687/cardboard/euevnlduvbq0eviu71gt.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
+        </div>
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387707/cardboard/inhplml3wlnlfskj2mkq.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
+        </div>
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387681/cardboard/ouxjhjjmhgcckax1ifki.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-column gallery-right">
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387524/cardboard/gkd1fuxpluzmkh7a9apv.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
+        </div>
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387565/cardboard/bdudfbalhz2bal2pslqo.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
+        </div>
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387704/cardboard/b052ihhqntcpn8xzelme.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
+        </div>
+        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387536/cardboard/ebrldk9jnmhro5gt77vv.jpg") %>
+          <div class="piece-info">
+            <p class="piece-info-text">john doe - 2021 - cardboard</p>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
