@@ -1,10 +1,13 @@
 <div class="container-whole">
-  <nav class="navbar navbar-expand-lg justify-content-between">
+  <nav class="navbar navbar-expand navbar-light  justify-content-between">
     <%= link_to root_path, class: "navbar-brand" do  %>
       <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1617388886/cardboard/qtvt0hdliq6udwdm3xay.png"), alt: "Employ to Empower" %>
     <% end %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav navbar-nav navbar-center mr-auto">
+        <ul class="nav navbar-nav navbar-center mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#">CP 3.0<span class="sr-only">(current)</span></a>
           </li>
@@ -61,7 +64,16 @@
         <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387524/cardboard/gkd1fuxpluzmkh7a9apv.jpg") %>
             <p class="piece-info-text">john doe - 2021 - cardboard</p>
         </div>
+        <!-- db testing -->
+        <div class="piece">
+          <%= link_to cp3_path(@pieces.first) do %>
+          <%= cl_image_tag @pieces.first.photo.key %>
+          <% end %>
+          <p class="piece-info-text"><%= @pieces.first.artist.name %> - <%= @pieces.first.event.year %> - cardbord </p>
+        </div>
       </div>
+
+
   </div>
 </div>
 
