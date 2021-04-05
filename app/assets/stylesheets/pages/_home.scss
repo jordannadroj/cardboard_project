@@ -33,8 +33,11 @@
   color: rgb(220,220,220);
   border-radius: 51px;
   border: 1px solid rgb(220,220,220);
+  transition: color 1s, background-color 1s;
   &:hover {
     text-decoration: none;
+    background-color: rgb(220,220,220);
+    color: $dark-grey;
   }
 }
 
