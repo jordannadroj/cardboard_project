@@ -1,1 +1,28 @@
-<%= @piece.id %>
+<%= render 'shared/navbar' %>
+
+<div class="container-show">
+  <br>
+  <br>
+  <br>
+  <h1><%= @piece.title %> <span style="color: #d13b2c;"> | </span> <span style="font-weight: 200;"><%= @piece.artist.name %></span></h1>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-xl-8">
+      <div>
+        <%= cl_image_tag @piece.photo.key, class: "show-photo" %>
+      </div>
+    </div>
+    <div class="col-4">
+      <%#= @piece.description %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam laboriosam repellendus esse perspiciatis assumenda fugit eaque cupiditate ut asperiores obcaecati dolorum, ex in molestiae explicabo, ea soluta! Blanditiis, recusandae, fuga!</p>
+      <br>
+      <h3>Location</h3>
+      <p>Vancouver</p>
+      <br>
+      <h3>Materials</h3>
+      <p>cardboard</p>
+    </div>
+  </div>
+</div>
