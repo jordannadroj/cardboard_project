@@ -42,7 +42,7 @@ puts "created piece #{Piece.first.title}"
 
 file = URI.open('https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg')
 p = Piece.first
-p.photo.attach(io: file, filename: 'piece1.jpeg')
+p.photo.attach(io: file, filename: 'piece1', content_type: 'image/jpg')
 
 puts "seeding complete"
 
