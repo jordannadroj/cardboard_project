@@ -40,11 +40,9 @@ Piece.create!(
 puts "created piece #{Piece.first.title}"
 
 
-url = URI.parse('https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg')
-filename = File.basename(url.path)
-file = URI.open(url)
+file = URI.open('https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg')
 piece = Piece.first
-piece.photo.attach(io: file, filename: filename, content_type: 'image/jpg')
+piece.photo.attach(io: file, filename: 'piece1.jpg', content_type: 'image/jpg')
 
 puts "seeding complete"
 
