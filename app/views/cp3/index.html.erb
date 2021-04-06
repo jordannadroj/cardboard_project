@@ -47,7 +47,7 @@
         <!-- db testing -->
         <div class="piece">
           <%= link_to cp3_path(@pieces.first) do %>
-          <%= cl_image_tag @pieces.first.photo.key, height: 300, width: 400, crop: :fill %>
+          <%= cl_image_tag @pieces.first.photo.key %>
           <% end %>
           <p class="piece-info-text"><%= @pieces.first.artist.name %> - <%= @pieces.first.event.year %> - cardbord </p>
         </div>
