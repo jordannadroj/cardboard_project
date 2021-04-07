@@ -28,10 +28,12 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { loadDynamicBannerText, loadTitle } from '../components/banner';
+import { toggleActive } from '../components/active'
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  toggleActive();
 });
 
 window.addEventListener("turbolinks:load", function() {
