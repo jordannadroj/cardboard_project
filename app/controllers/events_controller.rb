@@ -1,8 +1,6 @@
 class EventsController < ApplicationController
-
-def show
-  @pieces = Piece.all
-end
-
-
+  def show
+    @event = Event.find(params[:id])
+    @pieces = Piece.where(event_id: @event)
+  end
 end

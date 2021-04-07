@@ -46,9 +46,9 @@
         </div>
         <!-- db testing -->
         <div class="piece">
-          <%= link_to root_path do %>
-          <%= cl_image_tag @pieces.first.photo.key %>
-          <% end %>
+            <%= link_to piece_path(@pieces.first) do %>
+            <%= cl_image_tag @pieces.first.picture.key %>
+            <% end %>
           <p class="piece-info-text"><%= @pieces.first.artist.name %> - <%= @pieces.first.event.year %> - cardbord </p>
         </div>
       </div>

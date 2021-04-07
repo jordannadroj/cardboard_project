@@ -1,5 +1,9 @@
 class PiecesController < ApplicationController
-  before_action :find_event
+
+  def show
+    @piece = Piece.find(params[:id])
+  end
+
 
   def new
     @piece = Piece.new
@@ -10,7 +14,7 @@ class PiecesController < ApplicationController
     @piece.event = @event
 
     if @piece.save
-      redirect_to root_path
+      redirect_to event_piece_path(@piece)
     else
       render :new
     end
@@ -19,10 +23,6 @@ class PiecesController < ApplicationController
   private
 
   def piece_params
-    params.require(:piece).permit(:title, :description, :artist_id, :event_id)
-  end
-
-  def find_event
-    @event = Event.find(params[:event_id])
+    params.require(:piece).permit(:title, :description, :artist_id, :event_id, :picture)
   end
 end
