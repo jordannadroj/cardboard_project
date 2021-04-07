@@ -8,52 +8,16 @@
 
 
   <div class="gallery">
-      <div class="gallery-column gallery-left">
-        <div class="piece">
-          <a href="google.com">
-           <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg") %>
-          </a>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387507/cardboard/ppzlb4bllct2dq0avdpa.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387687/cardboard/euevnlduvbq0eviu71gt.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387707/cardboard/inhplml3wlnlfskj2mkq.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387681/cardboard/ouxjhjjmhgcckax1ifki.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-      </div>
-      <div class="gallery-column gallery-right">
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387524/cardboard/gkd1fuxpluzmkh7a9apv.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387565/cardboard/bdudfbalhz2bal2pslqo.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387704/cardboard/b052ihhqntcpn8xzelme.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387536/cardboard/ebrldk9jnmhro5gt77vv.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <div class="piece"><%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1617387524/cardboard/gkd1fuxpluzmkh7a9apv.jpg") %>
-            <p class="piece-info-text">john doe - 2021 - cardboard</p>
-        </div>
-        <!-- db testing -->
-        <div class="piece">
-            <%= link_to piece_path(@pieces.first) do %>
-            <%= cl_image_tag @pieces.first.picture.key %>
-            <% end %>
-          <p class="piece-info-text"><%= @pieces.first.artist.name %> - <%= @pieces.first.event.year %> - cardbord </p>
-        </div>
-      </div>
-
-
+        <% @pieces.each do |piece| %>
+          <!-- <div class="gallery-column"> -->
+            <div class="piece">
+                <%= link_to piece_path(piece) do %>
+                <%= cl_image_tag piece.picture.key %>
+                <% end %>
+              <p class="piece-info-text"><%= piece.artist.name %> - <%= piece.event.year %> - cardboard </p>
+            <!-- </div> -->
+          </div>
+        <% end %>
   </div>
 </div>
 

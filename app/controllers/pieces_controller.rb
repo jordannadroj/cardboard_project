@@ -11,10 +11,9 @@ class PiecesController < ApplicationController
 
   def create
     @piece = Piece.new(piece_params)
-    @piece.event = @event
 
     if @piece.save
-      redirect_to event_piece_path(@piece)
+      redirect_to piece_path(@piece)
     else
       render :new
     end
