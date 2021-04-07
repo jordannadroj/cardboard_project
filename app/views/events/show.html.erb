@@ -2,20 +2,21 @@
 <div class="container-whole">
 
   <div class="header">
-    <h2 style="font-weight: 200">Cardboard Project 3.0</h2>
+    <h2 style="font-weight: 200"><%= @event.title %></h2>
+    <hr>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio sapiente deserunt laboriosam, voluptate repellendus rerum quia reiciendis quod sed neque atque delectus sequi eaque aliquam maiores mollitia quisquam odio.</p>
   </div>
 
 
   <div class="gallery">
         <% @pieces.each do |piece| %>
-          <!-- <div class="gallery-column"> -->
+          <div class="gallery-column">
             <div class="piece">
                 <%= link_to piece_path(piece) do %>
                 <%= cl_image_tag piece.picture.key %>
                 <% end %>
-              <p class="piece-info-text"><%= piece.artist.name %> - <%= piece.event.year %> - cardboard </p>
-            <!-- </div> -->
+              <!-- <p class="piece-info-text"><#%= piece.artist.name %> - <%= piece.event.year %> - cardboard </p> -->
+            </div>
           </div>
         <% end %>
   </div>
