@@ -12,7 +12,7 @@ const loadDynamicBannerText = () => {
   new Typed('#banner-typed-text', {
     strings: ["What have you learned about social connection this year?"],
     typeSpeed: 40,
-    startDelay: 2000,
+    startDelay: 1000,
     showCursor: false
   });
 }
@@ -24,4 +24,4 @@ const loadDynamicBannerText = () => {
 
 
 
-export { loadDynamicBannerText, loadTitle };
+export { loadDynamicBannerText };
