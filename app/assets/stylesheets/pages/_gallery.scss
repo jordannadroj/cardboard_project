@@ -8,6 +8,19 @@
 .header {
   width: 66%;
   margin: 115px 0;
+  opacity: 1;
+
+
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein { /* for fade in effect */
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .container-gallery {
@@ -20,8 +33,22 @@
    margin-top: 40px;
    // border: 1px solid rgba(27, 27, 28, 0.8);
    border-width: thin;
-   // border-left: 1px solid $dark-grey;
+   opacity: 1;
+   -webkit-animation: fadeingallery 5s; /* Safari, Chrome and Opera > 12.1 */
+          -moz-animation: fadeingallery 5s; /* Firefox < 16 */
+           -ms-animation: fadeingallery 5s; /* Internet Explorer */
+            -o-animation: fadeingallery 5s; /* Opera < 12.1 */
+               animation: fadeingallery 5s;
  }
+
+ @keyframes fadeingallery { /* for fade in effect */
+     0% { opacity: 0; }
+     30% { opacity: 0; }
+     100%   { opacity: 1; }
+ }
+
+
+
 
  .gallery-column {
    flex: 50%;
