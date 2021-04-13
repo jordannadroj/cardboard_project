@@ -30,16 +30,31 @@
 
 
   <div class="gallery">
+      <% if @event.id == 3 %>
+          <% @pieces.each do |piece| %>
+            <div class="gallery-column">
+              <div class="piece">
+                  <%= link_to piece_path(piece) do %>
+                  <%= cl_image_tag piece.picture.key %>
+                  <% end %>
+              </div>
+            </div>
+          <% end %>
+      <% else %>
         <% @pieces.each do |piece| %>
           <div class="gallery-column">
             <div class="piece">
-                <%= link_to piece_path(piece) do %>
                 <%= cl_image_tag piece.picture.key %>
-                <% end %>
-              <!-- <p class="piece-info-text"><#%= piece.artist.name %> - <%= piece.event.year %> - cardboard </p> -->
             </div>
           </div>
         <% end %>
+      <% end %>
+      <!-- assembled pieces -->
+      <div class="gallery-column">
+        <div class="piece">
+            <%= image_tag "cp2assembled1", alt: "alttext" %>
+        </div>
+      </div>
   </div>
 </div>
 
