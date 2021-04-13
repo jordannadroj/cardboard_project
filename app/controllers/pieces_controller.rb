@@ -1,12 +1,10 @@
 class PiecesController < ApplicationController
-
   def show
     @piece = Piece.find(params[:id])
   end
 
-
   def new
-    @piece = Piece.new
+    @piece = Piece.new.includes(:artist, :event)
   end
 
   def create
