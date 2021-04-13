@@ -50,11 +50,25 @@
         <% end %>
       <% end %>
       <!-- assembled pieces -->
-      <div class="gallery-column">
-        <div class="piece">
-          <!-- assembled piece photo to go here -->
+      <% if @event.id == 2 %>
+        <div class="gallery-column">
+          <div class="piece">
+            <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/v1618347749/cp2assembled1_ihsxwf.png") %>
+          </div>
+        </div><div class="gallery-column">
+          <div class="piece">
+            <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/v1618348050/Screenshot_2021-04-12_131143_jcyihc.png") %>
+          </div>
+        </div><div class="gallery-column">
+          <div class="piece">
+            <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/v1618348051/Screenshot_2021-04-12_131359_utcifm.png") %>
+          </div>
+        </div><div class="gallery-column">
+          <div class="piece">
+            <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/v1618348051/Screenshot_2021-04-12_131557_cezga4.png") %>
+          </div>
         </div>
-      </div>
+      <% end %>
   </div>
 </div>
 
