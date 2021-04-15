@@ -6,10 +6,12 @@
 }
 
 
-.header {
+.event_header {
   width: 66%;
   margin: 115px 0;
   opacity: 1;
+  letter-spacing: 1px;
+
 
 
 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -17,6 +19,12 @@
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+}
+
+.event_header p {
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
 @keyframes fadein { /* for fade in effect */
@@ -54,16 +62,7 @@
  .gallery-column {
    flex: 50%;
    max-width: 50%;
-   // height: 500px;
-   // border: 0.1px solid rgba(27, 27, 28, 0.8);
-   // border-width: thin;
-   // padding: 0 4px;
  }
-
- // .gallery-left {
- //    border-right: 1px solid $dark-grey;
- // }
-
 
 
  .piece {
@@ -81,6 +80,8 @@
     transition: filter 0.4s;
     &:hover {
     -webkit-filter: brightness(85%);
+    // height: 200%;
+    // width: 200%;
     }
   }
  }

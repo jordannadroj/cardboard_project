@@ -1,6 +1,6 @@
  <nav class="navbar navbar-expand navbar-light  justify-content-between">
     <%= link_to event_path(3), class: "navbar-brand" do  %>
-      <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1617388886/cardboard/qtvt0hdliq6udwdm3xay.png"), alt: "Employ to Empower" %>
+      <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618513027/cardboard/ete-logo-3_irlqp4.png"), alt: "Employ to Empower" %>
     <% end %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,13 +22,8 @@
 
 <div class="container-whole">
 
-  <div class="header">
-    <em><h2 style="font-weight: 200"><%= @event.title %>: Hearing</h2></em>
-    <h3>What is the most meaningful thing you have ever heard?</h3>
-    <hr>
-    <p>Attentive Listening is listening without judgement and with an open mind. With this in mind we encourage you to heighten your senses, and learn from people’s stories and allow one’s voice to be amplified and heard, rather than allowing one’s physical appearance hinder your connection with them.</p>
-    <p>Similar to the first year, the Cardboard Project 2.0 features 100+ responses written by Vancouver’s Downtown Eastside sharing the most meaningful thing they’ve ever heard. </p>
-    <p>Moving forward we encourage you to continue to have meaningful conversations, challenge stereotypes, and learn to listen differently.</p>
+  <div class="event_header">
+    <%= render "shared/event_headers" %>
   </div>
 
 
