@@ -23,7 +23,12 @@
 <div class="container-whole">
 
   <div class="event_header">
-    <%= render "shared/event_headers" %>
+    <div class="event_header_text">
+      <%= render "shared/event_headers" %>
+    </div>
+    <div class="event_title">
+      <h3><%= @event.title %></h3>
+    </div>
   </div>
 
 
