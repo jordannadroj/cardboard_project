@@ -5,8 +5,12 @@
   // background-color: $tan;
 }
 
-
 .event_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event_header_text {
   width: 66%;
   margin: 115px 0;
   opacity: 1;
@@ -21,7 +25,19 @@
             animation: fadein 2s;
 }
 
-.event_header p {
+.event_title {
+  writing-mode: vertical-rl;
+  position: fixed;
+  right: 10px;
+  top: 45%;
+  // text-orientation: upright;
+  h3 {
+    font-weight: 200;
+    font-size: 20px;
+  }
+}
+
+.event_header_text p {
   line-height: 1.8;
   letter-spacing: 1px;
   text-align: justify;
