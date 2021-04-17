@@ -37,7 +37,7 @@ document.addEventListener('turbolinks:load', () => {
 });
 
 window.addEventListener("turbolinks:load", function() {
-  loadTitle();
+  // loadTitle();
   loadDynamicBannerText();
 });
 

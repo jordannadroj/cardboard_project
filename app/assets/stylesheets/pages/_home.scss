@@ -10,15 +10,29 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // h1 {
-    // opacity: 0;
-    // animation: fadeIn 1s ease-in both;
-  // }
-  // h4 {
-  //   opacity: 0;
-  //   animation: fadeIn 1s ease-in both;
-  //   animation-delay: 1s;
-  // }
+}
+
+#title {
+  color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+// homepage questions
+#banner-typed-text {
+  // transparent text with border
+  color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+
+#homepage_question {
+  width: 750px;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 60px;
+  height: 50%;
 }
 
 #view {
@@ -59,10 +73,17 @@
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
+  #homepage_question {
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 40px;
+    height: 50%;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 }
 
 
