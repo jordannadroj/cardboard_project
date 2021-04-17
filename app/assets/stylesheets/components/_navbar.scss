@@ -34,7 +34,7 @@
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translatex(-30%);
 }
 
 
@@ -60,11 +60,29 @@
 }
 
 
+.mobile {
+  display: none;
+}
+
+
 @media screen and (max-width: 700px) {
    .nav-link {
      font-size: 15px;
    }
-   .navbar-nav.navbar-center {
-    left: 67%;
+
+   // .navbar-nav.navbar-center {
+   //  left: 67%;
+   // }
+
+   .navbar img {
+    width: 50%;
+   }
+
+   .dekstop {
+    display: none;
+   }
+
+   .mobile {
+    display: block;
    }
  }
