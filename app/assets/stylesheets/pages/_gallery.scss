@@ -25,6 +25,15 @@
             animation: fadein 2s;
 }
 
+
+// .event-description {
+//   display: flex;
+//   justify-content: space-between;
+//   p {
+//     width: 30%;
+//   }
+// }
+
 .event_title {
   writing-mode: vertical-rl;
   position: fixed;
@@ -34,6 +43,10 @@
   h3 {
     font-weight: 200;
     font-size: 20px;
+  }
+  a {
+    color: $dark-grey;
+    text-decoration: none;
   }
 }
 

@@ -28,7 +28,7 @@
       <%= render "shared/event_headers" %>
     </div>
     <div class="event_title">
-      <h3><%= @event.title %></h3>
+      <h3><a href="#"><%= @event.title %></a></h3>
     </div>
   </div>
 
@@ -77,5 +77,14 @@
       <% end %>
   </div>
 </div>
+
+<footer>
+  <div class="footer">
+    <div class="footer-logo">
+      <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618658022/cardboard/Logo-ETE-White-2019_aryuph.png", :width=>150, :height=>190, :drop=>"fill", id: "footer-logo-image") %>
+    </div>
+    <div class="footer-links"></div>
+  </div>
+</footer>
 
 
