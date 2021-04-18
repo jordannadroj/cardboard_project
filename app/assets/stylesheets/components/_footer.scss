@@ -1,3 +1,7 @@
 .footer {
-  background: $dark-grey;
+  // background: $red;
+  display: flex;
+  justify-content: space-around;
+  // color: $tan;
+  border-top: 1px solid $dark-grey;
 }

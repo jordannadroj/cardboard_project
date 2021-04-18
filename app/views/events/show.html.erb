@@ -81,9 +81,18 @@
 <footer>
   <div class="footer">
     <div class="footer-logo">
-      <%= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618658022/cardboard/Logo-ETE-White-2019_aryuph.png", :width=>150, :height=>190, :drop=>"fill", id: "footer-logo-image") %>
+      <%#= cl_image_tag("https://res.cloudinary.com/jordannadroj/image/upload/v1618649254/cardboard/Logo-ETE-Written_1_lhg56k.png", :width=>200, :height=>100, :crop=>"fill", id: "footer-logo-image") %>
+      <%= image_tag "ete-logo-3.png", alt: "alttext", height: 100, width: 200 %>
     </div>
-    <div class="footer-links"></div>
+    <p>Presented by Employ to Empower</p>
+    <div class="footer-links">
+      <ul>
+        <li>About</li>
+        <li>Bla</li>
+        <li>Foo</li>
+        <li>Bar</li>
+      </ul>
+    </div>
   </div>
 </footer>
 
