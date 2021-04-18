@@ -34,7 +34,7 @@
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
-    transform: translatex(-30%);
+    transform: translatex(-50%);
 }
 
 
@@ -70,9 +70,9 @@
      font-size: 15px;
    }
 
-   // .navbar-nav.navbar-center {
-   //  left: 67%;
-   // }
+   .navbar-nav.navbar-center {
+    transform: translatex(-30%);
+   }
 
    .navbar img {
     width: 50%;
@@ -86,3 +86,4 @@
     display: block;
    }
  }
+

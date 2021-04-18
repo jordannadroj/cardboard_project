@@ -26,13 +26,10 @@
 }
 
 
-// .event-description {
-//   display: flex;
-//   justify-content: space-between;
-//   p {
-//     width: 30%;
-//   }
-// }
+.event-description {
+  font-weight: lighter;
+  font-size: 20px;
+}
 
 .event_title {
   writing-mode: vertical-rl;
@@ -129,6 +126,15 @@
  }
 
 
+#gallery-separator {
+  width: 66%;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 4%;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
 
  /* Responsive layout - makes a two column-layout instead of four columns */
  @media screen and (max-width: 1500px) {
@@ -143,5 +149,9 @@
    .gallery-column {
      flex: 100%;
      max-width: 100%;
+   }
+
+   #gallery-separator {
+    padding-left: 8%;
    }
  }
