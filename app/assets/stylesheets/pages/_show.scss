@@ -11,3 +11,20 @@
 .show-artist-name {
   font-weight: 200;
 }
+
+#back-arrow {
+  font-size: 30px;
+  color: #1b1b1c;
+  transition: color 0.2s;
+  width: 20px;
+  &:hover {
+    color: $red;
+  }
+}
+
+#back-arrow-link {
+  color: $dark-grey;
+  &:hover {
+    text-decoration: none;
+  }
+}

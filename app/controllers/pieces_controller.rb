@@ -4,7 +4,7 @@ class PiecesController < ApplicationController
   end
 
   def new
-    @piece = Piece.new.includes(:artist, :event)
+    @piece = Piece.new
   end
 
   def create
