@@ -37,7 +37,7 @@
       <% if @event.id == 3 %>
           <% @pieces.each do |piece| %>
             <div class="gallery-column">
-              <div class="piece">
+              <div class="piece piece3">
                   <%= link_to piece_path(piece) do %>
                   <%= cl_image_tag piece.picture.key %>
                   <% end %>
@@ -47,7 +47,7 @@
       <% else %>
         <% @pieces.each do |piece| %>
           <div class="gallery-column">
-            <div class="piece">
+            <div class="piece piece2">
                 <%= cl_image_tag piece.picture.key %>
             </div>
           </div>

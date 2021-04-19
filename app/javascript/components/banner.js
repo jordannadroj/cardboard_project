@@ -12,7 +12,7 @@ const loadDynamicBannerText = () => {
   new Typed('#banner-typed-text', {
     strings: ["What have you learned about community and connection in the past year?"],
     typeSpeed: 40,
-    startDelay: 2000,
+    // startDelay: 2000,
     showCursor: false
   });
 }
