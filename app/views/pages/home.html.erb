@@ -4,12 +4,7 @@
 
 
 <div class="banner">
-  <%= video_tag "CP.mp4", class: "home_video", autoplay: :autoplay, loop: :loop, muted: :muted, style: "width: 100vw;
- height: 100vh;
- position: absolute;
- object-fit: cover;
- top: 0;
- z-index: -2; filter: brightness(75%);" %>
+  <%= video_tag "CP.mp4", class: "home_video", autoplay: :autoplay, loop: :loop, muted: :muted %>
   <!-- <h1 id="title"></h1> -->
   <h1 id="homepage_question"><span id="banner-typed-text"></span></h1>
   <%= link_to "?", event_path(3), id: "view"  %>
