@@ -16,6 +16,10 @@
   filter: brightness(50%);
 }
 
+.home-text {
+  display: grid;
+  place-items: center;
+}
 
 #title {
   color: transparent;
@@ -34,7 +38,7 @@
 
 #homepage_question {
   width: 750px;
-  margin: 200px auto 20px auto;
+  margin: 200px auto 40px auto;
   text-align: left;
   font-size: 60px;
   height: 50%;
