@@ -1,0 +1,40 @@
+.footer {
+  // background: $red;
+  display: flex;
+  justify-content: space-around;
+  // color: $tan;
+  border-top: 1px solid $dark-grey;
+  align-items: center;
+  padding: 30px;
+  margin: 5% 0 0 0;
+}
+
+.footer-lists {
+  display: flex;
+}
+
+.footer-links li {
+  list-style-type: none;
+  color: $dark-grey;
+}
+
+.footer-links a {
+  color: $dark-grey;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}
+
+#presented-by {
+}
+
+
+@media screen and (max-width: 900px) {
+  .footer {
+    display: block;
+  }
+  .footer-lists {
+    display: block;
+  }
+}
