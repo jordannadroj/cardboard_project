@@ -4,7 +4,14 @@
 
 
 <div class="banner">
-  <%= video_tag "CP.mp4", class: "home_video", autoplay: :autoplay, loop: :loop, muted: :muted %>
+  <%= cl_video_tag ("https://res.cloudinary.com/jordannadroj/video/upload/v1618952340/cardboard/CP_q8qisa.mp4"), class: "home_video", autoplay: :autoplay, loop: :loop, muted: :muted, style:
+  "width: 100vw;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  z-index: -2;"
+   %>
   <!-- video -->
   <!-- <h1 id="title"></h1> -->
   <h1 id="homepage_question"><span id="banner-typed-text"></span></h1>
