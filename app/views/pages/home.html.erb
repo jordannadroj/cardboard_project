@@ -1,8 +1,10 @@
-<%= video_tag("CP.mp4") %>
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= cl_image_path "https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg"
- %>)">
+<!-- <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%#= cl_image_path "https://res.cloudinary.com/jordannadroj/image/upload/v1617387439/cardboard/wf8xucrfk1lfycfhxxkn.jpg"
+ %>)"> -->
 
+
+<div class="banner">
+  <%= video_tag "CP.mp4", id: "home_video", autoplay: :autoplay, loop: :loop, muted: :muted %>
   <!-- <h1 id="title"></h1> -->
   <h1 id="homepage_question"><span id="banner-typed-text"></span></h1>
   <%= link_to "?", event_path(3), id: "view"  %>

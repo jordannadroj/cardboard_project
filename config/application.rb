@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module CardboardProject
   class Application < Rails::Application
-    # config.assets.paths << "#{Rails.root}/app/assets/videos"
+    config.assets.paths << "#{Rails.root}/app/assets/videos"
     config.generators do |generate|
       generate.assets false
       generate.helper false
