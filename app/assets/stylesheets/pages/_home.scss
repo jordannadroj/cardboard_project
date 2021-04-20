@@ -1,27 +1,21 @@
 // Specific CSS for your home-page
 .banner {
-  // background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  // height: 100vh;
-  // background-size: cover;
-  // background-position: center;
-  // color: rgb(220,220,220);
-  // margin: auto;
-  // text-align: center;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  height: 100vh;
-  // display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
-// .home_video {
-//   width: 100vw;
-//   height: 100vh;
-//   position: absolute;
-//   object-fit: cover;
-//   top: 0;
-//   z-index: -2;
-// }
+.home_video {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  z-index: -2;
+  filter: brightness(50%);
+}
+
 
 #title {
   color: transparent;
@@ -40,7 +34,7 @@
 
 #homepage_question {
   width: 750px;
-  margin: 20px auto;
+  margin: 200px auto 20px auto;
   text-align: left;
   font-size: 60px;
   height: 50%;
@@ -86,7 +80,7 @@
 @media screen and (max-width: 800px) {
   #homepage_question {
     width: 80%;
-    margin: 20px auto;
+    // margin: 20px auto;
     text-align: left;
     font-size: 40px;
     height: 50%;
