@@ -13,8 +13,8 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 380px;
+  justify-content: center;
+  width: 45%;
 }
 
 #footer-logo-image {
@@ -46,8 +46,9 @@
 }
 
 #presented-by {
-  width: 280px;
-  margin: 0;
+  // width: 280px;
+  margin: 0 0 0 22px;
+
 }
 
 
@@ -57,6 +58,7 @@
   }
   .footer-logo {
     margin-bottom: 54px;
+    width: 80%;
   }
   .footer-lists {
     width: 80%;
@@ -76,6 +78,10 @@
 }
 
 @media screen and (max-width: 400px) {
+ .footer {
+  padding: 30px 12px;
+ }
+
  .footer-logo {
     width: 95%;
     display: block;
@@ -83,7 +89,7 @@
 
   #presented-by {
     width: 100%;
-    margin-top: 18px;
+    margin: 18px 0 0 0 ;
   }
 }
 
