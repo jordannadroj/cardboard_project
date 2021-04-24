@@ -149,6 +149,32 @@
    }
 
    #gallery-separator {
+    width: 85%;
     padding-left: 8%;
    }
+
+   .event_header_text {
+    width: 85%;
+   }
+
+   .event_header_text p {
+     line-height: 1.5;
+     letter-spacing: 1px;
+     text-align: justify;
+   }
  }
+
+
+
+
+@media screen and (max-width: 400px) {
+  .event_header_text p {
+    line-height: none;
+    letter-spacing: none;
+    text-align: justify;
+  }
+
+  .piece img {
+    height: 336px;
+  }
+}
