@@ -77,6 +77,17 @@
             <%= cl_image_tag ("https://res.cloudinary.com/jordannadroj/image/upload/v1618348051/Screenshot_2021-04-12_131557_cezga4.png") %>
           </div>
         </div>
+        <% elsif @event.id == 1 %>
+          <div class="gallery-column">
+            <div class="piece">
+              <%= image_tag "piece1.jpeg", alt: "piece1" %>
+            </div>
+          </div>
+          <div class="gallery-column">
+            <div class="piece">
+              <%= image_tag "piece2.jpeg", alt: "piece2" %>
+            </div>
+          </div>
       <% end %>
   </div>
 </div>
