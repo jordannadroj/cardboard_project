@@ -17,8 +17,8 @@
 }
 
 .home-text {
-  display: grid;
-  place-items: center;
+  text-align: center;
+  margin: 10% 15% 5% 15%;
 }
 
 #title {
@@ -37,31 +37,40 @@
 
 
 #homepage_question {
-  width: 750px;
-  margin: 200px auto 40px auto;
-  text-align: left;
+  // text-align: justify;
   font-size: 60px;
   height: 50%;
+  margin-bottom: 50px;
 }
 
-#view {
+#view p {
   padding: 20px;
   // background: rgb(220,220,220);
-  width: 110px;
+  font-size: 24px;
   text-align: center;
   margin: 10px auto;
   opacity: 0;
   animation: fadeIn 1s ease-in both;
-  animation-delay: 6s;
+  animation-delay: 4s;
   color: rgb(220,220,220);
-  border-radius: 51px;
-  border: 1px solid rgb(220,220,220);
+  // border-radius: 51px;
+  // border: 1px solid rgb(220,220,220);
   transition: color 1s, background-color 1s;
   &:hover {
     text-decoration: none;
-    background-color: rgb(220,220,220);
-    color: $dark-grey;
+    // background-color: rgb(220,220,220);
+    color: $red;
   }
+}
+
+
+
+
+
+
+
+#view:hover {
+  text-decoration: none;
 }
 
 // setting the animation for hompage banner text
@@ -81,20 +90,42 @@
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  #homepage_question {
-    width: 80%;
-    // margin: 20px auto;
-    text-align: left;
-    font-size: 40px;
-    height: 50%;
+@media screen and (max-width: 1200px) {
+  .home-text {
+    margin: 10% 10% 5% 10%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+  #homepage_question {
+    font-size: 50px;
+    height: 50%;
+    margin-bottom: 50px;
+  }
+
+  .home-text {
+    margin: 20% 10% 5% 10%;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  #homepage_question {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .home-text {
+    margin: 20% 10% 5% 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #homepage_question {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}
 
 
 

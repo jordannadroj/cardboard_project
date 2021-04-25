@@ -9,7 +9,9 @@
   <!-- <h1 id="title"></h1> -->
   <div class="home-text">
     <h1 id="homepage_question"><span id="banner-typed-text"></span></h1>
-    <%= link_to "?", event_path(3), id: "view"  %>
+    <%= link_to event_path(3), id: "view" do %>
+      <p><em>The Cardboard Project 3.0 &rarr;</em></p>
+    <% end %>
   </div>
 </div>
 
