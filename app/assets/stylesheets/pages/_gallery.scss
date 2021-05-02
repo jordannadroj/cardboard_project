@@ -20,24 +20,35 @@
 }
 
 .event-header-with-rsvp-text {
-  width: 75%;
+  // width: 75%;
 }
 
-#rsvp {
-  // align-self: center;
-  background-color: $red;
-  color: $tan;
-  border: 1px solid $red;
-  height: max-content;
-  padding: 24px;
-  border-radius: 12px;
-  transition: background-color 0.5s, color 0.5s;
+.rsvp {
+  transition: color 0.5s;
+  font-size: 28px;
+  margin-left: 5%;
+  color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $red;
   &:hover {
     text-decoration: none;
-    background-color: $tan;
+    // background-color: $tan;
     color: $red;
   }
 }
+
+#rsvp-right {
+  height: max-content;
+  p {
+  text-align: right;
+  white-space: nowrap;
+  }
+}
+ 
+#rsvp-under {
+  display: none;
+}
+
 
 .event_header_text {
   width: 66%;
@@ -153,11 +164,11 @@
 
 #gallery-separator {
   width: 66%;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: lighter;
   padding-left: 4%;
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: 6px;
 }
 
 
@@ -168,6 +179,18 @@
      max-width: 50%;
    }
  }
+
+ @media screen and (max-width: 1400px) {
+   #rsvp-right {
+     display: none;
+   }
+
+   #rsvp-under {
+     display: initial;
+   }
+ }
+
+
 
  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 1000px) {
