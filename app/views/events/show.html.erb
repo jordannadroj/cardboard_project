@@ -13,7 +13,7 @@
 
 
   <div class="gallery">
-      <% if @event.id == 3 %>
+      <% if @event.id == 4 %>
           <% @pieces.each do |piece| %>
             <div class="gallery-column">
               <div class="piece piece3">
@@ -23,6 +23,8 @@
               </div>
             </div>
           <% end %>
+      <% elsif @event.id == 3 %>
+        <%= render "shared/cp3" %>
       <% else %>
         <% @pieces.each do |piece| %>
           <div class="gallery-column">
@@ -35,7 +37,7 @@
       <!-- assembled pieces -->
       <br>
       <% unless @event.id == 3 %>
-      <h2 id="gallery-separator">Sculpture</h2>
+      <h2 id="gallery-separator">Certain individual cardboard response pieces in the images above were assembled into the sculptures seen below at the Cardboard Project 1.0 and 2.0 events.</h2>
       <% end %>
 
 
