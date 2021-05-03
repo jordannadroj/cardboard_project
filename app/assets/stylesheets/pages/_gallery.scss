@@ -24,16 +24,22 @@
 }
 
 .rsvp {
-  transition: color 0.5s;
+  transition: color 0.5s, text-decoration 0.5s;
   font-size: 28px;
   margin-left: 5%;
-  color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $red;
+  color: $red;
+  font-style: italic;
   &:hover {
     text-decoration: none;
+    // font-style: oblique;
+    color: $dark-blue;
+    //   -webkit-text-stroke-width: 1px;
+    //   -webkit-text-stroke-color: $red;
     // background-color: $tan;
-    color: $red;
+    // color: $red;
+  }
+  &:hover #register {
+    text-decoration: underline;
   }
 }
 
