@@ -23,6 +23,8 @@
               </div>
             </div>
           <% end %>
+      <% elsif @event.id == 3 %>
+        <%= render "shared/cp3" %>
       <% else %>
         <% @pieces.each do |piece| %>
           <div class="gallery-column">
