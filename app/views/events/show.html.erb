@@ -1,25 +1,4 @@
- <nav class="navbar navbar-expand navbar-light  justify-content-between">
-    <%= link_to about_path, class: "navbar-brand" do  %>
-      <img src="https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618649254/cardboard/Logo-ETE-Written_1_lhg56k.png" alt="Employ to Empower" class="dekstop">
-      <img src="https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618649826/cardboard/Logo-ETE-Black-HalfSize-2019_b9qsaw.png" alt="Employ to Empower" class="mobile">
-    <% end %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav navbar-nav navbar-center mr-auto mt-2 mt-lg-0">
-          <li class="nav-item <%= 'active' if @event.id == 3 %>">
-            <a class="nav-link" href="/events/3">CP 3.0</a>
-          </li>
-          <li class="nav-item <%= 'active' if @event.id == 2 %>">
-            <a class="nav-link" href="/events/2">CP 2.0</span></a>
-          </li>
-          <li class="nav-item <%= 'active' if @event.id == 1 %>">
-            <a class="nav-link" href="/events/1">CP 1.0</a>
-          </li>
-        </ul>
-    </div>
-  </nav>
+<%= render 'shared/navbar' %>
 
 <div class="container-whole">
 
