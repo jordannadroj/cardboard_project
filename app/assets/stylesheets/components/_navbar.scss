@@ -81,19 +81,27 @@
    .navbar-nav.navbar-center {
     transform: translatex(-30%);
    }
+ }
 
-   .navbar img {
-    width: 50%;
-   }
 
-   .dekstop {
+
+ @media screen and (max-width: 580px) {
+  .navbar img {
+   width: 50%;
+  }
+
+  .navbar-nav.navbar-center {
+   transform: translatex(-44%);
+  }
+
+ .dekstop {
     display: none;
    }
 
    .mobile {
     display: block;
    }
- }
+}
 
  @media screen and (max-width: 490px) {
     #about-link {
@@ -103,6 +111,15 @@
       justify-content: center;
       margin: 0 auto;
       text-align: center;
+    }
+
+    .navbar-nav.navbar-center {
+     transform: translatex(-30%);
+    }
+
+
+    .navbar-collapse {
+      padding-bottom: 30px;
     }
   }
 
