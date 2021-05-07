@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about', as: 'about'
 
   resources :events, only: [:show]
-  resources :pieces, only: [:new, :create, :show]
+  resources :pieces, only: [:show]
 
 
 
