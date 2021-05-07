@@ -179,6 +179,17 @@
 }
 
 
+.link_to_video_div {
+  text-align: center;
+} a  {
+  color: $dark-grey;
+  font-size: 24px;
+  &:hover {
+    text-decoration: none;
+    color: $red;
+  }
+}
+
  /* Responsive layout - makes a two column-layout instead of four columns */
  @media screen and (max-width: 1500px) {
    .gallery-column {
