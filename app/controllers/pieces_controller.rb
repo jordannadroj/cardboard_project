@@ -3,19 +3,21 @@ class PiecesController < ApplicationController
     @piece = Piece.find(params[:id])
   end
 
-  def new
-    @piece = Piece.new
-  end
+  # commenting below to remove any user from adding pieces
+  # to use again add routes back in for new and create
+  # def new
+  #   @piece = Piece.new
+  # end
 
-  def create
-    @piece = Piece.new(piece_params)
+  # def create
+  #   @piece = Piece.new(piece_params)
 
-    if @piece.save
-      redirect_to piece_path(@piece)
-    else
-      render :new
-    end
-  end
+  #   if @piece.save
+  #     redirect_to piece_path(@piece)
+  #   else
+  #     render :new
+  #   end
+  # end
 
   private
 
