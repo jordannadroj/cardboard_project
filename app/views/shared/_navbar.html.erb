@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-light  justify-content-between">
     <%= link_to root_path, class: "navbar-brand" do  %>
-      <img src="https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618649254/cardboard/Logo-ETE-Written_1_lhg56k.png" alt="Employ to Empower" class="dekstop">
+      <img src="https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618649254/cardboard/Logo-ETE-Written_1_lhg56k.png" alt="Employ to Empower" class="desktop">
       <img src="https://res.cloudinary.com/jordannadroj/image/upload/c_thumb,w_200,g_face/v1618649826/cardboard/Logo-ETE-Black-HalfSize-2019_b9qsaw.png" alt="Employ to Empower" class="mobile">
     <% end %>
     <!-- <li class="nav-item <#%= 'active' if current_page?(about_path)%>"> -->
@@ -13,14 +13,20 @@
           <li class="nav-item <%= 'active' if current_page?(event_path(3))%>">
             <a class="nav-link" href="/events/3">CP 3.0</a>
           </li>
+          <li class="nav-item <%= 'active' if current_page?(reels_path)%>">
+            <a class="nav-link" href="/reels">CP 3.0 Videos</a>
+          </li>
           <li class="nav-item <%= 'active' if current_page?(event_path(2))%>">
             <a class="nav-link" href="/events/2">CP 2.0</span></a>
           </li>
           <li class="nav-item <%= 'active' if current_page?(event_path(1))%>">
             <a class="nav-link" href="/events/1">CP 1.0</a>
           </li>
+          <li class="nav-item mobile <%= 'active' if current_page?(event_path(1))%>">
+            <a class="nav-link <%= 'active' if current_page?(about_path)%>" href="/about">Our Story</a>
+          </li>
         </ul>
-      <div class="nav nav-item navbar-nav ml-auto" id="about-link">
+      <div class="nav nav-item navbar-nav ml-auto desktop" id="about-link">
         <a class="nav-link <%= 'active' if current_page?(about_path)%>" href="/about">Our Story</a>
       </div>
     </div>
