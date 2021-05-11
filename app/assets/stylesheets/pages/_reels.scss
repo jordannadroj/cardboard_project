@@ -18,6 +18,14 @@
   left: 2%;
 }
 
+.back-arrow-videos {
+  margin: 0 auto 10px auto;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .banner-reels h1 {
   margin: 0;
   // color: white;
