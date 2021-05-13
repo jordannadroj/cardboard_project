@@ -16,13 +16,19 @@
   font-weight: 200;
   position: absolute;
   left: 2%;
+  transition: color 0.3s;
+  &:hover {
+    color: $red;
+  }
 }
 
 .back-arrow-videos {
   margin: 0 auto 10px auto;
   text-align: center;
+  transition: color 0.3s;
   &:hover {
     text-decoration: none;
+    color: $red;
   }
 }
 
