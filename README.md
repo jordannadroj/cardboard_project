@@ -1,1 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+The Cardboard Project is a unique event that was inspired by the culture of individuals experiencing homelessness and poverty, who often write messages and stories on pieces of cardboard. The Cardboard Project features a unique artwork, created using messages written on cardboard. These messages respond to a different question every year, focusing on human connection, recovery, wisdom, community, listening, spirituality, and other themes. The Cardboard Project also features talks by thought leaders, discussions with our members, experiences inviting us all to connect, and an exhibition of our members’ artistic creations. The overall goal of the Cardboard Project is to dismantle prevailing negative stigmas and strive towards a Downtown Eastside neighbourhood where members are seen, heard, and validated, while feeling connected to the greater community.
+
+This website has given them the chance to bring the archives of Cardboard Projects back to life.
+
+ Thank you to Employ to Empower for putting your trust in me. I am so grateful to have been able to volunteer for such a rad foundation.
